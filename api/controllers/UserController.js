@@ -1,5 +1,6 @@
 var _ = require('lodash');
-
+//IMPORTANT: for create/update functions async-await syntax is used. Because of the bug with the newest version of sails for functions find/findOne 
+//syntax find().exec(function etc.) is used. 
 module.exports = {
   create: async function (req, res) {
     var parameters = [
